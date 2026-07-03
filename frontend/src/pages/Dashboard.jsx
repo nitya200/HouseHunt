@@ -19,7 +19,7 @@ const Dashboard = () => {
 
     const fetchProperties = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/properties');
+        const res = await axios.get('https://househunt-backend-6vgr.onrender.com/api/properties');
         
         // 1. Get properties owned by the current user
         const userProps = res.data.filter(property => 
@@ -43,7 +43,7 @@ const Dashboard = () => {
   const handleDelete = async (id) => {
     if (window.confirm('Are you sure you want to delete this property?')) {
       try {
-        await axios.delete(`http://localhost:5000/api/properties/${id}`, {
+        await axios.delete(`https://househunt-backend-6vgr.onrender.com/api/properties/${id}`, {
           headers: { Authorization: `Bearer ${token}` }
         });
         setMyProperties(myProperties.filter(property => property._id !== id));
@@ -57,7 +57,7 @@ const Dashboard = () => {
   const handleApprove = async (id) => {
     try {
       // Send a PUT request to update the adminApproved flag
-      await axios.put(`http://localhost:5000/api/properties/${id}`, 
+      await axios.put(`https://househunt-backend-6vgr.onrender.com/api/properties/${id}`, 
         { adminApproved: true },
         { headers: { Authorization: `Bearer ${token}` } }
       );

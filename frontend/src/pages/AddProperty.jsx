@@ -30,7 +30,7 @@ const AddProperty = () => {
 
     try {
       // 2. Send the request with the Authorization header attached
-      await axios.post('http://localhost:5000/api/properties', formData, {
+      await axios.post('https://househunt-backend-6vgr.onrender.com/api/properties', formData, {
         headers: {
           Authorization: `Bearer ${token}`
         }

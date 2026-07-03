@@ -15,7 +15,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/users/register', formData);
+      await axios.post('https://househunt-backend-6vgr.onrender.com/api/users/register', formData);
       alert('Registration successful! Please login.');
       navigate('/login');
     } catch (err) {
