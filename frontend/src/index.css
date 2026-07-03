@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8fafc; /* A very soft, modern off-white */
+  color: #1e293b;
+}
+/* Premium Card Styling */
+.card {
+  border: none !important;
+  border-radius: 16px !important;
+  background: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Make cards float when you hover over them */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* Sleek Inputs */
+.form-control, .form-select {
+  border-radius: 10px;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+/* Upgraded Buttons */
+.btn {
+  border-radius: 10px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.3px;
+  padding: 0.6rem 1.5rem !important;
+  transition: all 0.2s ease;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* Custom Navbar Gradient */
+.navbar {
+  background: linear-gradient(90deg, #0f172a 0%, #1e293b 100%) !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
