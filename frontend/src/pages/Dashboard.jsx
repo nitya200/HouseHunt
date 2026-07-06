@@ -71,7 +71,7 @@ const Dashboard = () => {
 
   return (
     <div className="container mt-5">
-      <h2 className="mb-4">My Dashboard</h2>
+      <h2 className="mb-4">My first Dashboard</h2>
       
       {/* --- ADMIN ONLY SECTION --- */}
       {user?.role === 'admin' && (
